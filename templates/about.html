@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='logo.jpg') }}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Flight Fare Prediction</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../static/about.css" />
+
+</head>
+
+<body>
+
+
+  <section id="Main">
+    <a href="{{ url_for( 'index' ) }}">
+      <h3>Flight Price Prediction</h3>
+    </a>
+    <div>
+      <ul id="navbar">
+        <li><a href="{{ url_for( 'index' ) }}">HOME</a></li>
+        <li><a href="{{ url_for( 'predict' ) }}">PREDICTION</a></li>
+        <li><a class="active" href="{{ url_for('about') }}">ABOUT US</a></li>
+        <li><a href="{{ url_for( 'contact' ) }}">CONTACT US</a></li>
+        <!-- <li><a href="#">OVERVIEW</a></li> -->
+      </ul>
+    </div>
+  </section>
+  <header class="section__container header__container">
+    <h1 class="section__header">About Us</h1>
+  </header>
+  <section class="section__container about__container">
+    <div class="about__image">
+      <img src="{{ url_for('static', filename='f1.jpeg') }}" alt="flight" />
+    </div>
+    <div class="about__content">
+      <h2 class="section__header">Information</h2>
+      <div class="about__grid">
+        <div class="about__details">
+          <p>
+            The goal of the flight price prediction project is to develop a model that can accurately predict the prices of airline tickets. This project utilizes data analysis, machine learning, and statistical modeling techniques to analyze historical flight data and make predictions on future flight prices. The flight price prediction project is aimed at helping travelers plan their trips more effectively by providing insights into the potential price trends of flight tickets.<br>
+             This model predicts the price of the flight based on some parameters like total stops, journey Day, journey month, Air India, Indigo, source, destination, etc. We have trained this model using the random forest regressor and after training, fine-tune the model which is also known as hyper parameter tuning. Then save a model and deploy this Flight Fare Prediction model using the Flask application on the localhost. The project aims to create a predictive model that can forecast flight prices with a high degree of accuracy. The flight price prediction project can provide valuable insights for travelers, travel agencies, and airlines to optimize their travel planning, pricing strategie
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+  <section class="footer">
+    <div class="footer-content">
+      <h4>Source city</h4>
+      <li><a href="https://en.wikipedia.org/wiki/Bangalore">Banglore</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Chennai">Chennai</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Delhi">Delhi</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Kolkata">Kolkata</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Kolkata">Mumbai</a></li>
+    </div>
+    <div class="footer-content">
+      <h4>Destination city</h4>
+      <li><a href="https://en.wikipedia.org/wiki/Bangalore">Banglore</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Kochi">Cochin</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Delhi">Delhi</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Kolkata">Kolkata</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Hyderabad">Hyderabad</a></li>
+    </div>
+    <div class="footer-content">
+      <h4>Airlines Available</h4>
+     <li><a class="white-text" href="https://www.goindigo.in/">IndiGo</a></li>
+     <li><a class="white-text" href="http://www.airindia.in/">Air India</a></li>
+     <li><a class="white-text" href="https://en.wikipedia.org/wiki/Jet_Airways">Jet Airways</a></li>
+     <li><a class="white-text" href="https://www.spicejet.com/">SpiceJet</a></li>
+     <li><a class="white-text" href="https://en.wikipedia.org/wiki/Interlining#:~:text=Interlining%2C%20also%20known%20as%20interline,multiple%20flights%20on%20multiple%20airlines.">Multiple carriers</a></li>
+     <li><a class="white-text" href="https://www.goair.in/">GoAir</a></li>
+     <li><a class="white-text" href="https://www.airvistara.com/in/en">Vistara</a></li>
+     <li><a class="white-text" href="https://www.airasia.com/en/gb">Air Asia</a></li>
+     <li><a class="white-text" href="https://www.airvistara.com/in/en/vistara-experience/on-board/cabin#:~:text=Premium%20Economy%20customers%20also%20enjoy,fares%20for%20travel%20within%20India&text=10kg%20Hand%20Baggage%20allowance%20for%20travel%20within%20a">Vistara Premium economy</a></li>
+     <li><a class="white-text" href="https://onemileatatime.com/jet-airways-a330-business-class/#:~:text=Jet%20Airways%20Business%20Class%20A330%20Seat&text=The%20cabin%20alternates%20between%20one,4%2D5%20seats%20per%20row.">Jet Airways Business</a></li>
+     <li><a class="white-text" href="https://en.wikipedia.org/wiki/Premium_economy">Multiple carriers Premium economy</a></li>
+     <li><a class="white-text" href="https://www.trujet.com/#/home">Trujet</a></li>
+    </div>
+</section>
+<div class="footerbottom">
+  <p>VANIT PANCHAL@2024</p>
+</div>
+</footer>
+</body>
+</html>

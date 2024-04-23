@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='logo.jpg') }}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Flight Fare Prediction</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../static/contact.css" />
+
+</head>
+
+<body>
+
+
+  <section id="Main">
+    <a href="{{ url_for( 'index' ) }}">
+      <h3>Flight Price Prediction</h3>
+    </a>
+    <div>
+      <ul id="navbar">
+        <li><a href="{{ url_for( 'index' ) }}">HOME</a></li>
+        <li><a href="{{ url_for( 'predict' ) }}">PREDICTION</a></li>
+        <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
+        <li><a class="active" href="{{ url_for('contact') }}">CONTACT US</a></li>
+        <!-- <li><a href="#">OVERVIEW</a></li> -->
+      </ul>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>Alpha College of Engineering And Technology<br>khatraj,kalol</p>
+          </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+91 9313442534</p>
+            </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>vanitpanchal251@gmail.com</p>
+              </div>
+              </div>
+        </div>
+        <div class="contactCard">
+          <img src="{{ url_for('static', filename='vanit.jpeg') }}" alt="traveller" />
+          <div class="contact__card__content">
+            <img src="{{ url_for('static', filename='alpha.png') }}" alt="client" />
+            <h4>Vanit Panchal</h4>
+            <p>200510116002</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <footer id="Footer">
+
+      <div class="footer">
+          <h3> Flight Price Prediction </h3>
+
+      </div>
+
+   </footer>
+</body>
+</html>

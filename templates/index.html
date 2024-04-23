@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='logo.jpg') }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flight Fare Prediction</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/style.css" />
+
+
+</head>
+
+<body>
+
+
+    <section id="Main">
+        <a href="{{ url_for( 'index' ) }}">
+            <h3>Flight Price Prediction</h3>
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="{{ url_for( 'index' ) }}">HOME</a></li>
+                <li><a href="{{ url_for( 'predict' ) }}">PREDICTION</a></li>
+                <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
+                <li><a href="{{ url_for( 'contact' ) }}">CONTACT US</a></li>
+                <!-- <li><a href="#">OVERVIEW</a></li> -->
+                <!-- <li><a href="#"><button class="btn success">CODE</button></a></li> -->
+            </ul>
+        </div>
+    </section>
+
+    
+    
+    <header class="section__container header__container">
+      
+        <div id="app"></div>
+
+        <img class="picture" src="{{ url_for('static', filename='header.jpg') }}" alt="header" />
+      </header>
+    
+      <section class="section__container plan__container">
+        <p class="subheader">TRAVEL SUPPORT</p>
+        <h2 class="section__header">Plan your travel with confidence</h2>
+        <p class="description">
+          Find help with your price predict and travel plans, and seee what to expect
+          along your journey.
+        </p>
+        <div class="plan__grid">
+          <div class="plan__content">
+            <span class="number">01</span>
+            <h4>Travel Requirements for Bangalore</h4>
+            <p>
+              Stay informed and prepared for your trip to Dubai with essential
+              travel requirements, ensuring a smooth and hassle-free experience in
+              this vibrant and captivating city.
+            </p>
+            <span class="number">02</span>
+            <h4>Multi-risk travel insurance</h4>
+            <p>
+              Comprehensive protection for your peace of mind, covering a range of
+              potential travel risks and unexpected situations.
+            </p>
+            <span class="number">03</span>
+            <h4>Travel Requirements by destinations</h4>
+            <p>
+              Stay informed and plan your trip with ease, as we provide up-to-date
+              information on travel requirements specific to your desired
+              destinations.
+            </p>
+          </div>
+          <div class="plan__image">
+            <img src="{{ url_for('static', filename='plan-1.jpg') }}" alt="plan" />
+            <img src="{{ url_for('static', filename='plan-2.jpg') }}" alt="plan" />
+            <img src="{{ url_for('static', filename='plan-3.jpg') }}" alt="plan" />
+          </div>
+        </div>
+      </section>
+     
+      <section class="Destination">
+        <h2 class="Destination_header">Destination City</h2>
+      <div class="container">
+        <div class="container1">
+          <div class="front">
+            <img src="{{ url_for('static', filename='t1.jpg') }}">
+            <h2>Banglore</h2>
+          </div>
+          <div class="back">
+            <h2>Banglore</h2>
+            <p>Bangalore is the Capital of the Indian State of Karnataka.It has a population of over ten million,making it a megacity and the Third populous City in India.It is located in Southern India. </p>
+          </div> 
+        </div>
+
+        <div class="container1">
+          <div class="front">
+            <img src="{{ url_for('static', filename='t2.jpg') }}">
+            <h2>Mumbai</h2>
+          </div>
+          <div class="back">
+            <h2>Mumbai</h2>
+            <p>Mumbai is the capital city of the Indian state of Maharashtra. Mumbai lies on the Konkan coast on the west coast of India and has a deep natural harbour. In 2008, Mumbai was named an alpha world city. </p>
+          </div>
+        </div>
+
+        <div class="container1">
+          <div class="front">
+            <img src="{{ url_for('static', filename='t3.jpg') }}">
+            <h2>Kolkata</h2>
+          </div>
+          <div class="back">
+            <h2>Kolkata</h2>
+            <p>Kolkata is the seventh most populous city of India with an estimated city proper population of 4.5 million (0.45 crore). It is the centre of the Kolkata Metropolitan Region.</p>
+          </div>
+        </div>
+
+        <div class="container1">
+          <div class="front">
+            <img src="{{ url_for('static', filename='t4.jpg') }}">
+            <h2>Hyderabad</h2>
+          </div>
+          <div class="back">
+            <h2>Hyderabad</h2>
+            <p>Hyderabad district occupies an area of approximately 217 square kilometers. Hyderabad is known as the City of Pearls, as it had once flourished as a global center for trade of rare diamonds. </p>
+          </div>
+        </div>
+
+        <div class="container1">
+          <div class="front">
+            <img src="{{ url_for('static', filename='t5.jpg') }}">
+            <h2>Delhi</h2>
+          </div>
+          <div class="back">
+            <h2>Delhi</h2>
+            <p>Delhi is located in northern India between the latitudes of 28°-24'-17” and 28°-53'-00” North and longitudes of 76°-50'-24” and 77°-20'-37” East. Delhi shares bordering with the States of Uttar Pradeshand Haryana. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="section__container lounge__container">
+        <div class="lounge__image">
+          <img src="{{ url_for('static', filename='lounge-1.jpg') }}" alt="lounge" />
+          <img src="{{ url_for('static', filename='lounge-2.jpg') }}" alt="lounge" />
+        </div>
+        <div class="lounge__content">
+          <h2 class="section__header">Unaccompanied Minor Lounge</h2>
+          <div class="lounge__grid">
+            <div class="lounge__details">
+              <h4>Experience Tranquility</h4>
+              <p>
+                Serenity Haven offers a tranquil escape, featuring comfortable
+                seating, calming ambiance, and attentive service.
+              </p>
+            </div>
+            <div class="lounge__details">
+              <h4>Elevate Your Experience</h4>
+              <p>
+                Designed for discerning travelers, this exclusive lounge offers
+                premium amenities, assistance, and private workspaces.
+              </p>
+            </div>
+            <div class="lounge__details">
+              <h4>A Welcoming Space</h4>
+              <p>
+                Creating a family-friendly atmosphere, The Family Zone is the
+                perfect haven for parents and children.
+              </p>
+            </div>
+            <div class="lounge__details">
+              <h4>A Culinary Delight</h4>
+              <p>
+                Immerse yourself in a world of flavors, offering international
+                cuisines, gourmet dishes, and carefully curated beverages.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <center>
+        <section id="Model">
+            <div class="acc">
+                <h1>Performance metrics </h1>
+                <table>
+                    <tr>
+                        <th>Model accuracy</th>
+                        <th>Percentages</th>
+                    </tr>
+                    <tr>
+                        <th>ExtratreeRegressor</th>
+                        <th>93.70%</th>
+                    </tr>
+                    <tr>
+                        <th>Linear Regression</th>
+                        <th>72.00%</th>
+                    </tr>
+                    <tr>
+                        <th>XGBoost</th>
+                        <th>82.00%</th>
+                    </tr>
+                    <tr>
+                        <th>Random Forest Regressor</th>
+                        <th>93.80%</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="acc">
+                <h1></h1>
+                <table>
+                    <tr>
+                        <th>r2_Score</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <th>ExtratreeRegressor</th>
+                        <th>0.89</th>
+                    </tr>
+                    <tr>
+                        <th>Linear Regression</th>
+                        <th>0.37</th>
+                    </tr>
+                    <tr>
+                        <th>XGBoost</th>
+                        <th>0.60</th>
+                    </tr>
+                    <tr>
+                        <th>Random Forest Regressor</th>
+                        <th>0.90</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </center>
+
+    <footer id="Footer">
+
+        <div class="footer">
+            <h3> Flight Price Prediction </h3>
+            <a target="_blank" href="https://www.instagram.com/_itzz_vp_?igsh=MWFsbGkxeHBwZnZiMg=="><i class="fa fa-instagram fa-3x instagram-icon" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/vanit-panchal-7a37b7275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin fa-3x contact-icon"></i></a>
+        </div>
+
+        <div class="last">
+            <p>A Machine learning flight price prediction web-application, build with flask </p>
+            
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script> 
+      var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Welcome To Our Website')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Predict Flight Price')
+    .pauseFor(2500)
+    .start();
+    </script>
+</body>
+
+</html>
